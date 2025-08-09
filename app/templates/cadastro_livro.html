@@ -3,31 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style_form.css')}}">
+    <link rel="shortcut icon" href="{{url_for('static', filename='img/fav_icon1.png')}}" type="image/x-icon">
     <title>Página de Cadastro</title>
 </head>
 <body>
-    <form method="post">
-            {{form.csrf_token}}
+    <section class="sec-1">
+        <form method="post">
+                {{form.csrf_token}}
 
-            {{form.titulo.label()}}
-            {{form.titulo()}}
+                {{form.titulo.label()}}
+                {{form.titulo()}}
 
-            {{form.autor.label()}}
-            {{form.autor()}}
+                {{form.autor.label()}}
+                {{form.autor()}}
 
-            {{form.categoria.label()}}
-            {{form.categoria()}}
+                {{form.categoria.label()}}
+                {{form.categoria()}}
 
-            {{form.editora.label()}}
-            {{form.editora()}}
+                {{form.editora.label()}}
+                {{form.editora()}}
 
-            {{form.preco.label()}}
-            {{form.preco()}}
+                {{form.preco.label()}}
+                {{form.preco()}}
 
-            {{form.ano_publicacao.label()}}
-            {{form.ano_publicacao()}}
+                {{form.ano_publicacao.label()}}
+                {{form.ano_publicacao()}}
 
-            {{form.btnSubmit()}}
-    </form>
+                {{form.btnSubmit()}}
+        </form>
+    </section>
 </body>
 </html>
