@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Cadastro</title>
+</head>
+<body>
+    <form method="post">
+            {{form.csrf_token}}
+
+            {{form.titulo.label()}}
+            {{form.titulo()}}
+
+            {{form.autor.label()}}
+            {{form.autor()}}
+
+            {{form.categoria.label()}}
+            {{form.categoria()}}
+
+            {{form.editora.label()}}
+            {{form.editora()}}
+
+            {{form.preco.label()}}
+            {{form.preco()}}
+
+            {{form.ano_publicacao.label()}}
+            {{form.ano_publicacao()}}
+
+            {{form.btnSubmit()}}
+    </form>
+</body>
+</html>
